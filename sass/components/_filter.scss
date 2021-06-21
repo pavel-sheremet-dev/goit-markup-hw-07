@@ -1,4 +1,19 @@
-.filter-list-btn {
+.filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -8px;
+}
+
+.filter__item {
+  margin-top: 8px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.filter__btn {
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;

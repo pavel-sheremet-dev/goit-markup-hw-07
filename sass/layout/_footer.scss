@@ -1,37 +1,44 @@
-.page-footer-section {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-color);
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.contacts-column {
+.footer__contacts {
   margin-right: 70px;
 }
 
-.page-footer-contacts {
+.footer__address {
   margin-top: 20px;
   font-style: normal;
 }
 
-.page-footer-contacts-list-item {
-  @include _fs_lh_ls(14, 24, 0.03);
-  color: var(--alternate-logo-color);
-
+.footer__item {
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
 
-.footer-contacts-color {
+.footer__link {
+  @include _fs_lh_ls(14, 24, 0.03);
   color: var(--footer-contacts-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.social-list-title {
+.footer__link_address-color {
+  color: var(--alternate-logo-color);
+}
+
+.footer__title {
   margin-bottom: 20px;
 
   @include _fs_lh_ls(14, 16);
@@ -39,61 +46,6 @@
   color: var(--alternate-logo-color);
 }
 
-// footer form
-
-.footer-form {
+.footer__subscribe {
   margin-left: auto;
 }
-
-.footer-subscribe {
-  display: flex;
-}
-
-.footer-subscribe-email {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
-  width: 358px;
-  margin-right: 12px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--bg-color);
-  color: var(--alternate-logo-color);
-
-  &::placeholder {
-    @include _fs_lh_ls(16, 20);
-    color: var(--footer-contacts-color);
-  }
-}
-
-.footer-subscribe-btn {
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
-  padding-right: 28px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  cursor: pointer;
-  border-radius: 4px;
-  border: none;
-  @include _fw_fs_lh_ls(700, 16, 30, 0.06);
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--alternate-logo-color);
-  background-color: var(--accent-color);
-  transition: background-color 250ms var(--timing-func);
-
-  &:hover,
-  &:focus {
-    background-color: var(--hover-modal-btn-color);
-  }
-}
-
-.subscribe-icon-send {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: currentColor;
-}
-// end footer form

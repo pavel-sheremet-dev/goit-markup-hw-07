@@ -10,7 +10,7 @@
     visibility 250ms var(--timing-func);
 }
 
-.is-hidden {
+.backdrop_is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

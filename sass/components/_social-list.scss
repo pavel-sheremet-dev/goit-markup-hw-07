@@ -3,12 +3,7 @@
   justify-content: center;
 }
 
-.footer-social-list {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.social-list-item {
+.social-list__item {
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -18,7 +13,7 @@
   justify-content: center;
 }
 
-.social-list-link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,31 +27,31 @@
   }
 }
 
-.social-icon {
+.social-list__icon {
   width: 20px;
   height: 20px;
 
-  .light-theme-icon-bgc:hover &,
-  .light-theme-icon-bgc:focus & {
+  .social-list__link_light-theme-icon-bg:hover &,
+  .social-list__link_light-theme-icon-bg:focus & {
     fill: var(--alternate-logo-color);
   }
 }
 
-.light-theme-icon-bgc {
+.social-list__link_light-theme-icon-bg {
   background-color: var(--alternate-logo-color);
   transition: background-color 250ms var(--timing-func);
 }
 
-.light-theme-icon {
+.social-list__icon_light-theme {
   fill: var(--link-icons-color);
   transition: fill 250ms var(--timing-func);
 }
 
-.dark-theme-icon-bgc {
-  background-color: var(--dark-theme-icon-bgc);
+.social-list__link_dark-theme-icon-bg {
+  background-color: var(--dark-theme-icon-bg);
   transition: background-color 250ms var(--timing-func);
 }
 
-.dark-theme-icon {
+.social-list__icon_dark-theme {
   fill: var(--alternate-logo-color);
 }

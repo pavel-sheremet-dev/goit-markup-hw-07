@@ -1,5 +1,4 @@
 .logo {
-  margin-right: 93px;
   font-family: var(--logo-font-family);
   @include _fw_fs_lh_ls(700, 26, 31, 0.03);
   color: var(--main-logo-color);
@@ -9,11 +8,15 @@
   animation-delay: 500ms;
 }
 
-.accent-color {
+.header__logo {
+  margin-right: 93px;
+}
+
+.logo_accent-color {
   color: var(--accent-color);
 }
 
-.alternate-logo-color {
+.logo_secondary-color {
   color: var(--alternate-logo-color);
 }
 
