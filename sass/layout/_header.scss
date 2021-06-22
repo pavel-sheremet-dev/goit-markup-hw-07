@@ -4,9 +4,14 @@
   border-bottom-style: solid;
 }
 
+
 .header__container {
   display: flex;
   align-items: center;
+}
+
+.header__logo {
+  margin-right: 93px;
 }
 
 .header__menu-list {
